@@ -1,0 +1,50 @@
+# Bytecode compilati
+__pycache__/
+*.py[cod]
+
+# File di log
+*.log
+
+# Ambiente virtuale
+env/
+venv/
+ENV/
+.venv/
+*.env
+
+# Configurazioni di editor/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+
+# File di sistema
+.DS_Store
+Thumbs.db
+
+# File di test coverage
+*.coverage
+.coverage.*
+
+# File generati da build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# File generati da pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# File di configurazione o segreti
+*.env
+.env.*
+secrets.json
+
+# Altri strumenti Python
+.mypy_cache/
+.pytest_cache/
+.tox/
+.coverage/
+.pytype/
