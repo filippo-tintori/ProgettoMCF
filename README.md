@@ -354,32 +354,26 @@ Per determinare un numero adeguato di palline da utilizzare nella simulazione di
 
 Considerando una distribuzione binomiale con probabilità $p$ e numero di livelli $n_{\text{passi}}$\, la media $\mu$ e la deviazione standard $\sigma$ della distribuzione delle palline sono date da:
 
-$$
-\mu = n_{\text{passi}} \cdot p
-$$
-$$
-\sigma = \sqrt{n_{\text{passi}} \cdot p \cdot (1 - p)}
-$$
+$$\mu = n_{\text{passi}} \cdot p$$
+
+$$\sigma = \sqrt{n_{\text{passi}} \cdot p \cdot (1 - p)}$$
 
 Per garantire che l'incertezza nella stima della posizione media sia sufficientemente piccola, imponiamo che la deviazione standard della media sia inferiore o uguale a una soglia prefissata ($\delta$). La deviazione standard della media è espressa come:
 
 
-$$
-\frac{\sigma}{\sqrt{n_{\text{passi}}}} \leqslant \delta
-$$
+$$\frac{\sigma}{\sqrt{n_{\text{passi}}}} \leqslant \delta$$
+
 da cui segue la condizione:
-$$
-n_{\text{passi}} \geqslant \frac{\sigma^2}{\delta^2}
-$$
+
+$$n_{\text{passi}} \geqslant \frac{\sigma^2}{\delta^2}$$
+
 assicurando così un fit binomale e gaussiano adeguato. In quanto si minimizza l'inccertezza nella posizione media delle palline, e quindi una minimizzazione dell'errore relativo nella stima della distribuzione.
 
 Nel caso di una macchina di Galton 2D, si considera la distribuzione delle palline lungo l'unico asse. 
 
 Nel caso di una macchina di Galton 3D, in cui si hanno due assi (X e Y), per determinare il numero totale di palline necessarie, si calcola separatamente il numero di palline richiesto per ciascun asse $n_{\text{palline}, X}$ e $n_{\text{palline}, Y}$ utilizzando la formula sopra riportata. Successivamente, si seleziona il valore maggiore tra i due:
 
-$$
-n_{\text{palline}} = \max(n_{\text{palline}, X}, \ n_{\text{palline}, Y})
-$$
+$$n_{\text{palline}} = \max(n_{\text{palline}, X}, \ n_{\text{palline}, Y})$$
 
 Questo criterio garantisce che la simulazione sia accurata in tutte le dimensioni considerate.
 
