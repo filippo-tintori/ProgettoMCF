@@ -43,25 +43,19 @@ Ogni pallina andrà a finire in un compartimento (bin) e dopo la caduta di un nu
 
 La distribuzione delle palline segue una **distribuzione binomiale** se consideriamo il numero di passi (rimbalzi) come un numero finito. Tuttavia, sotto determinate condizioni, la distribuzione di Galton si avvicina alla distribuzione gaussiana.
 
-$$
-B_{n,p}(\nu) = P(\nu \text{ successi in } n \text{ prove}) = \binom{n}{\nu} p^\nu (1-p)^{n-\nu}
-$$
+$$B_{n,p}(\nu) = P(\nu \text{ successi in } n \text{ prove}) = \binom{n}{\nu} p^\nu (1-p)^{n-\nu}$$
 
 Dove:
 
-$$
-\binom{n}{\nu} = \frac{n!}{\nu!(n-\nu)!}
-$$
+$$\binom{n}{\nu} = \frac{n!}{\nu!(n-\nu)!}$$
 
 P($\nu$) è la probabilità che la palline finisca nel $\nu$-esimo contenitore della macchina di Galton.
 
 Se si verificano le condizioni di approssimazione:
-$$
-B_{n,p} \approx G_{X,\sigma}(\nu) \ \ \ \ \ \ \ \ \ \ (n \  \text{grande})
-$$
-$$
-\text{con} \ \ \ X = np \ \ \ \ \ \ \ \ \ \ \ \sigma = \sqrt{np(1-p)}
-$$
+
+$$B_{n,p} \approx G_{X,\sigma}(\nu) \ \ \ \ \ \ \ \ \ \ (n \  \text{grande})$$
+
+$$\text{con} \ \ \ X = np \ \ \ \ \ \ \ \ \ \ \ \sigma = \sqrt{np(1-p)}$$
 
 Le condizioni di approssimazione sono le seguenti:
 - il numero di numero di passi deve essere sufficientemente grande;
