@@ -415,9 +415,9 @@ Nonostante ciò, dagli studi sulle diverse macchine di Galton si può vedere com
 ## Referenze
 
 1. Libro "Introduzione all'analisi degli errori" di John R. Taylor
-2. [it.wikipedia.org](https://it.wikipedia.org/wiki/Macchina_di_Galton)
-3. [cirdis.stat.unipg.it](https://web.archive.org/web/20121117140646/http://cirdis.stat.unipg.it/files/macchina_galton/macchina_galton/index.html)
-4. [https://www.dm.unibo.it](https://www.dm.unibo.it/pls/mma-cdl-edition/Senza%20Nome/progetto-GALTON3D/galton3d.html)
+2. [it.wikipedia.org](https://it.wikipedia.org/wiki/Macchina_di_Galton) - Macchina di Galton
+3. [cirdis.stat.unipg.it](https://web.archive.org/web/20121117140646/http://cirdis.stat.unipg.it/files/macchina_galton/macchina_galton/index.html) - Macchina Galton
+4. [https://www.dm.unibo.it](https://www.dm.unibo.it/pls/mma-cdl-edition/Senza%20Nome/progetto-GALTON3D/galton3d.html) - Progetto Galton 3D
 
 
 ## Licenza
