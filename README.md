@@ -291,7 +291,7 @@ Simulazione 3D con correlazione:
 - ***matrice*** (matrice di correlazione 2x2)
 
 
-È consigliato utilizzate il parametri ***margineErrore*** così da far calcolare al programma direttamente un numero adeguato di palline da simulare e da garantire che la distribuzione delle palline segua un'approssimazione gaussiana della distribuzione binomiale, riducendo l'incertezza nella posizione media.
+> È consigliato utilizzate il parametro ***margineErrore*** così da far calcolare al programma direttamente un numero adeguato di palline da simulare e da garantire che la distribuzione delle palline segua un'approssimazione gaussiana della distribuzione binomiale, riducendo l'incertezza nella posizione media. Valore consigliato per il parametro: 0.01
 
 ## Studio delle simulazioni 
 
