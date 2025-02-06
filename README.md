@@ -402,17 +402,11 @@ Per ricalcolare la matrice di correlazione dai passi verso destra effettuati lun
 
 È una misura statistica utilizzata per confrontare i dati osservati con quelli attesi, al fine di verificaare se esiste una differenza significatica tra essi. Viene calcolato come:
 
-$$
-\chi^2=\sum_{k=1}^{n} \frac{(O_k - E_k)^2}{E_k}
-$$
+$$\chi^2=\sum_{k=1}^{n} \frac{(O_k - E_k)^2}{E_k}$$
 con:
-$$
-O_k = \text{numero di volte che il valore $k$ è stato osservato / rilevato}
+$$O_k = \text{numero di volte che il valore $k$ è stato osservato}$$
 
-\newline
-
-E_k = \text{numero di volte che il valore $k$ è atteso}
-$$
+$$E_k = \text{numero di volte che il valore $k$ è atteso}$$
 
 Causa problemi nel caso in cui il valore atteso $E_k$ è pari a 0. 
 
@@ -426,7 +420,7 @@ Nonostante ciò, dagli studi sulle diverse macchine di Galton si può vedere com
 
 ## Referenze
 
-1. Introduzione all'analisi degli errori di John R. Taylor
+1. Libro "Introduzione all'analisi degli errori" di John R. Taylor
 2. [it.wikipedia.org](https://it.wikipedia.org/wiki/Macchina_di_Galton)
 3. [cirdis.stat.unipg.it](https://web.archive.org/web/20121117140646/http://cirdis.stat.unipg.it/files/macchina_galton/macchina_galton/index.html)
 4. [https://www.dm.unibo.it](https://www.dm.unibo.it/pls/mma-cdl-edition/Senza%20Nome/progetto-GALTON3D/galton3d.html)
