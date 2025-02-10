@@ -412,6 +412,7 @@ class Galton3D(GaltonBase):
         fig = plt.figure(figsize=(10, 7))
         ax = fig.add_subplot(111, projection='3d')
 
+        
         ax.bar3d(xPos, yPos, zPos, dx, dy, dz, color='skyblue', edgecolor='royalblue', alpha=0.5)
         
         ax.set_title(f"Distribuzione 3D della Macchina di Galton\nnPassi={self.nPassi},  nPalle={self.nPalle},  probX={self.probX},  probY={self.probY}")
@@ -441,6 +442,7 @@ class Galton3D(GaltonBase):
         fig = plt.figure(figsize=(10, 7))
         ax = fig.add_subplot(111, projection='3d')
 
+        
         ax.bar3d(xPos, yPos, zPos, dx, dy, dz, color='skyblue', edgecolor='royalblue', alpha=0.5)
         
         
@@ -821,7 +823,7 @@ class Galton3Dcorr(Galton3D):
         
         fig = plt.figure(figsize=(12, 8))
         ax = fig.add_subplot(111, projection='3d')
-
+        
         # istogramma 3D 
         ax.bar3d(xPos, yPos, zPos, dx, dy, dz, color='skyblue', edgecolor='royalblue', alpha=0.5, label='Istogramma Simulato')
 
@@ -854,7 +856,7 @@ class Galton3Dcorr(Galton3D):
         
         fig = plt.figure(figsize=(12, 8))
         ax = fig.add_subplot(111, projection='3d')
-
+        
         # istogramma 3D 
         ax.bar3d(xPos, yPos, zPos, dx, dy, dz, color='skyblue', edgecolor='royalblue', alpha=0.5, label='Istogramma Simulato')
             

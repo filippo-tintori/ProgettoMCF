@@ -190,7 +190,7 @@ def studio2Dpt2():
     Si varia il numero di passi, mantenendo la probabilità invariata.
     
     """
-    passi = np.array([5, 10, 20,  50, 100, 200, 300, 400, 500, 800, 1000])
+    passi = np.array([5, 10, 20,  50, 100, 200, 300, 400, 500, 800])
     
     print("Probabilità di andare a DX scelta: 0.5")
     
@@ -321,7 +321,7 @@ def studio2Dpt3():
     """
     
     passi = 500
-    prob = np.array([0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.])
+    prob = np.array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
     
     print(f"Numero di passi scelti: {passi}")
     

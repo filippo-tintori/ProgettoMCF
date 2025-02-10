@@ -83,7 +83,7 @@ def gaussiana(x, mu, sigma, amp):
         float:          Valore della distribuzione gaussiana normalizzata per il valore di X.
         
     """
-    
+    sigma = max(sigma, 1e-6)
     return amp * np.exp(-0.5 * ((x - mu) / sigma) ** 2)
 
 
