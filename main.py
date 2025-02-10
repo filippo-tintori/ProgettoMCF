@@ -129,8 +129,8 @@ def parse_arguments():
         if args.probX is None:
             parser.error("Devi fornire la probabilità --probX per la simulazione.")
 
-        if args.probX < 0 or args.probX > 1:
-            parser.error("La probabilità --probX deve essere compresa tra 0 e 1.")
+        if args.probX <= 0 or args.probX >= 1:
+            parser.error("La probabilità --probX deve essere compresa tra 0 e 1 (esclusi).")
 
         if args.nPassi is None:
             parser.error("Devi fornire il numero di passi --nPassi")
@@ -148,11 +148,15 @@ def parse_arguments():
         if args.dim3:
             if args.probY is None:
                 parser.error("Devi fornire sia --probX che --probY per la simulazione 3D.")
+            if args.probY <= 0 or args.probY >= 1:
+                parser.error("La probabilità --probY deve essere compresa tra 0 e 1 (esclusi).")
 
 
         if args.dim3corr:
             if args.probY is None:
                 parser.error("Devi fornire sia --probX che --probY per la simulazione 3D correlata.")
+            elif args.probY <= 0 or args.probY >= 1:
+                parser.error("La probabilità --probY deve essere compresa tra 0 e 1 (esclusi).")
             if args.matrice is None:
                 parser.error("Devi fornire la matrice di correlazione --matrice per la simulazione 3D correlata.")
             args.matrice = np.array(args.matrice).reshape(2,2)
